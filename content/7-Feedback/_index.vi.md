@@ -6,120 +6,117 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-> Phần này chia sẻ trải nghiệm cá nhân và phản hồi của tôi khi tham gia chương trình First Cloud Journey (FCJ) tại AWS, hy vọng sẽ giúp team FCJ tiếp tục cải thiện chương trình cho các thực tập sinh tương lai.
+> Tôi viết phần này để ghi lại trải nghiệm của riêng mình với chương trình First Cloud Journey (FCJ) và gửi gắm vài góp ý để các bạn thực tập sau có thể tận dụng cơ hội tốt hơn nữa.
 
 ---
 
 ### Đánh Giá Chung
 
 **1. Môi trường làm việc**  
-Môi trường làm việc tại AWS vượt xa mong đợi của tôi. Văn phòng hiện đại, trang bị đầy đủ và được thiết kế để tối ưu năng suất. Điều ấn tượng nhất là **văn hóa cởi mở** nơi mọi người, bất kể cấp bậc, đều dễ tiếp cận và sẵn sàng hỗ trợ. Sự linh hoạt làm việc từ xa/hybrid cũng rất được đánh giá cao, cho phép tôi cân bằng việc học và phát triển hiệu quả.
+AWS mang đến đúng kiểu môi trường tôi nghĩ chỉ có sau nhiều năm làm việc: văn phòng tiện nghi, phòng tập trung yên tĩnh và hệ thống công cụ hoạt động trơn tru. Điều bất ngờ nhất là **sự gần gũi** của mọi người xung quanh. Các anh chị kỹ sư senior luôn sẵn sàng dừng lại để giải thích bối cảnh, còn quản lý thì chủ động bảo tôi nhắn tin khi gặp bế tắc. Mô hình hybrid giúp tôi linh hoạt: những ngày cần tập trung thì làm remote, còn khi cần brainstorm thì lên văn phòng.
 
-Team FCJ tạo ra bầu không khí hỗ trợ nơi việc đặt câu hỏi được khuyến khích, không bị đánh giá. Được truy cập tài nguyên và dịch vụ AWS để thực hành là vô giá - tôi có thể thử nghiệm với hạ tầng cloud thực thay vì chỉ đọc tài liệu.
+Vì FCJ xem sự tò mò là điểm mạnh, tôi tự tin đặt nhiều câu hỏi hơn bình thường. Với sandbox account và credits sẵn có, tôi dựng hạ tầng thực, phá hỏng nó rồi sửa lại dưới sự hướng dẫn—điều mà sách vở không thể mang lại.
 
 **2. Sự hỗ trợ của Mentor / Team Admin**  
-Sự hướng dẫn tôi nhận được là **xuất sắc**. Mentor không chỉ đưa ra câu trả lời - họ hướng dẫn tôi qua quá trình giải quyết vấn đề, giúp tôi phát triển kỹ năng tư duy phản biện cho các quyết định kiến trúc cloud. Những điểm nổi bật:
+Mentor của tôi đóng vai trò huấn luyện thay vì chỉ đưa đáp án. Khi mang đến một blocker, tôi luôn được gợi mở đọc whitepaper, thử công cụ hoặc phân tích log để tự rút ra lời giải. Những điểm nổi bật:
 
-- **Buổi 1:1 hàng tuần** để review tiến độ và giải quyết thách thức
-- **Code review** với phản hồi xây dựng giúp cải thiện coding practices
-- **Thảo luận kiến trúc** giúp tôi hiểu "tại sao" đằng sau các quyết định thiết kế
-- **Hướng dẫn nghề nghiệp** về AWS certifications và các hướng phát triển cloud engineering
+- **1:1 hàng tuần** để demo tiến độ, retros các sai sót và lên kế hoạch cho rủi ro sắp tới
+- **Code review kỹ lưỡng** nhấn mạnh khả năng đọc, test và vận hành của mỗi commit
+- **Phiên đào sâu kiến trúc** để tôi hiểu các đánh đổi chứ không chỉ nhìn sơ đồ cuối cùng
+- **Định hướng nghề nghiệp** xoay quanh certifications, danh mục dự án và lộ trình sau khi tốt nghiệp
 
-Team admin xử lý hiệu quả mọi công việc hậu cần - từ account access đến resource provisioning - để tôi có thể tập trung hoàn toàn vào học và xây dựng.
+Song song, team admin lo trọn hậu cần—from quyền IAM đến hỗ trợ thiết bị—trước khi tôi kịp nhận ra vấn đề. Nhờ vậy tôi có thể dồn toàn bộ thời gian cho việc ship tính năng.
 
 **3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Dự án Bandup IELTS **hoàn toàn phù hợp** với nền tảng khoa học máy tính của tôi đồng thời đẩy tôi vào những lĩnh vực mới:
+Dự án Bandup IELTS vừa bám sát nền tảng khoa học máy tính vừa kéo tôi sang địa hạt cloud thực chiến:
 
-| Kiến Thức Học Thuật Áp Dụng | Kỹ Năng Mới Học Được |
-|----------------------------|---------------------|
-| Lập trình Python | AWS Lambda & Serverless architecture |
-| Cấu trúc dữ liệu & thuật toán | RAG pipelines & Vector embeddings |
-| Cơ sở dữ liệu | DynamoDB & ElastiCache |
-| Mạng máy tính cơ bản | VPC, Subnets, Security Groups |
-| Kỹ thuật phần mềm | CI/CD, Infrastructure as Code |
+| Kiến Thức Học Thuật Áp Dụng | Kỹ Năng Mới Phát Triển |
+|----------------------------|-----------------------|
+| Lập trình Python | AWS Lambda & dàn nhạc serverless |
+| Cấu trúc dữ liệu & thuật toán | RAG pipelines & vector search |
+| Kiến thức cơ sở dữ liệu | DynamoDB, ElastiCache, mô hình dữ liệu |
+| Kiến thức mạng máy tính | Thiết kế VPC, phân subnet, kiểm soát bảo mật |
+| Kỹ thuật phần mềm | Tự động hóa CI/CD, Infrastructure as Code |
 
-Dự án thách thức tôi tích hợp các dịch vụ AI (Gemini API, Titan Embeddings) vào hệ thống production-ready - điều vượt xa các bài tập trên lớp.
+Bài tập trên lớp hiếm khi đòi hỏi SLA hay tích hợp AI thật sự. Việc tự tay xây dựng luồng audio với Gemini và embedding với Titan giúp tôi thấm rõ những yếu tố như độ trễ, thông lượng và chi phí.
 
 **4. Cơ hội học hỏi & phát triển kỹ năng**  
-Chương trình FCJ cung cấp **cơ hội học tập xuất sắc**:
+FCJ kết hợp giữa khung học tập có định hướng và sự tự chủ thực chiến. Trong 12 tuần tôi đã:
 
-- **Kinh nghiệm AWS thực tế** với 15+ dịch vụ (Lambda, API Gateway, SQS, DynamoDB, S3, ECS, Fargate, Bedrock, v.v.)
-- **Sở hữu dự án thực** - Tôi không chỉ làm task nhỏ; tôi xây dựng Lambda functions hoàn chỉnh từ đầu
-- **Kỹ năng tối ưu chi phí** - Học cách đạt được tiết kiệm 72% thông qua quyết định kiến trúc thông minh
-- **Thực hành documentation** - Tạo hướng dẫn workshop toàn diện này như một tài liệu chia sẻ kiến thức
-- **Tiếp xúc AI/ML** - Tích hợp các AI models tiên tiến cho ứng dụng thực tế
+- **Làm việc với hơn 15 dịch vụ AWS** thuộc compute, integration, data và AI (Lambda, API Gateway, SQS, DynamoDB, S3, ECS, Fargate, Bedrock, ...)
+- **Sở hữu trọn vòng đời tính năng**: từ định nghĩa scope, viết code, test đến triển khai 4 Lambda functions
+- **Rèn kỹ năng tối ưu chi phí**, chứng minh được mức tiết kiệm 72% nhờ quy trình audio native của Gemini
+- **Ghi chép đầy đủ** thông qua bộ workshop này để người đi sau có lộ trình rõ ràng
+- **Thử nghiệm tích hợp AI/ML** mang lại giá trị ngay cho người học
 
-Việc tự học kết hợp với hướng dẫn của mentor tạo ra sự cân bằng hoàn hảo cho phát triển kỹ năng.
+Những buổi checkpoint với mentor giữ cho tôi không đi chệch hướng, đồng thời vẫn đủ tự do để thử nghiệm và học từ sai sót.
 
 **5. Văn hóa & tinh thần đồng đội**  
-Văn hóa **customer obsession** và **ownership** của AWS thể hiện rõ ràng trong suốt kỳ thực tập:
+Mỗi Leadership Principle của Amazon mà tôi từng đọc đều xuất hiện trong đời sống hằng ngày. Ví dụ:
 
-- Các thành viên trong team thực sự quan tâm đến việc giúp tôi thành công
-- Thất bại được coi là cơ hội học hỏi, không phải chỉ trích
-- Đổi mới được khuyến khích - đề xuất của tôi về Gemini native audio (tiết kiệm 72% chi phí) được hoan nghênh và triển khai
-- Tư duy "Day 1" giữ cho mọi người luôn có động lực và hướng về tương lai
+- Đồng đội đầu tư thời gian kèm tôi hoàn thiện demo dù đã tối muộn
+- Khi gây ra sự cố, cả nhóm làm post-mortem không đổ lỗi mà rút kinh nghiệm
+- Đề xuất về luồng audio native với Gemini không chỉ được lắng nghe mà còn trở thành chuẩn mặc định
+- Tinh thần “Day 1” không chỉ là khẩu hiệu; mọi người liên tục hỏi làm sao để Bandup phục vụ học viên tốt hơn
 
-Tôi cảm thấy như một người đóng góp có giá trị, không chỉ là "thực tập sinh." Công việc của tôi có ý nghĩa, và điều đó tạo ra sự khác biệt lớn trong sự gắn kết và động lực của tôi.
+Cảm giác được góp sức thực sự chứ không phải chỉ quan sát khiến tôi gắn bó ngay từ tuần đầu.
 
 **6. Chính sách / phúc lợi cho thực tập sinh**  
-Chương trình FCJ cung cấp hỗ trợ tuyệt vời:
+FCJ thực sự đầu tư cho thực tập sinh:
 
-- ✅ Phụ cấp thực tập cạnh tranh
-- ✅ Giờ làm việc linh hoạt phù hợp lịch học sinh viên
-- ✅ Truy cập tài nguyên đào tạo AWS và certifications
-- ✅ Tech talks nội bộ và các buổi học
-- ✅ Cơ hội networking với các chuyên gia AWS
-- ✅ Kinh nghiệm dự án thực để xây dựng portfolio
+- ✅ Phụ cấp xứng đáng với giá trị công việc
+- ✅ Giờ giấc linh hoạt giúp cân bằng lịch học đại học
+- ✅ Truy cập không giới hạn Skill Builder, whitepaper và tech talk nội bộ
+- ✅ Kết nối với kỹ sư từ nhiều org khác nhau để trao đổi nghề nghiệp
+- ✅ Sản phẩm thực tế đủ sức đưa thẳng vào portfolio
 
 ---
 
 ### Câu Hỏi Phản Ánh
 
-**Điều tôi thấy hài lòng nhất trong kỳ thực tập?**
+**Điều khiến tôi hài lòng nhất trong kỳ thực tập?**
 
-Xây dựng thứ gì đó thực sự hoạt động. Nhìn thấy nền tảng Bandup đánh giá bài luận IELTS và tạo flashcards bằng AI - biết rằng tôi đã xây dựng những Lambda functions đó - mang lại cho tôi sự hài lòng to lớn. Khoảnh khắc Speaking Evaluator xử lý thành công audio qua Gemini là điểm nhấn mà tôi sẽ không bao giờ quên.
+Được ship tính năng mà người học thực sự sử dụng. Khoảnh khắc Speaking Evaluator nuốt file audio, xử lý qua Gemini rồi trả về điểm band thông qua Lambda pipeline do tôi xây dựng khiến tôi nhận ra: code của mình đang giúp ai đó học tốt hơn.
 
-**Điều gì có thể cải thiện cho thực tập sinh tương lai?**
+**Điều gì có thể cải thiện cho thế hệ thực tập tiếp theo?**
 
-- **Truy cập AWS account sớm hơn** - Có quyền truy cập đầy đủ từ ngày 1 sẽ đẩy nhanh quá trình học
-- **Onboarding có cấu trúc hơn** - Checklist các khái niệm AWS "cần biết" sẽ giúp thực tập sinh mới làm quen nhanh hơn
-- **Hợp tác giữa các thực tập sinh** - Ghép cặp thực tập sinh trong các dự án bổ sung có thể nâng cao học tập
-- **Tiếp xúc nhiều hơn với các team khác** - Cơ hội shadowing với các team AWS khác sẽ mở rộng góc nhìn
+- **Cấp quyền AWS sớm hơn** để mọi người lao vào xây dựng ngay ngày đầu
+- **Bộ onboarding có cấu trúc** gồm kiến thức AWS nền tảng, cách cấu hình CLI và các lưu ý bảo mật
+- **Ghép cặp giữa các thực tập sinh** trên cùng sáng kiến để học hỏi lẫn nhau
+- **Cơ hội luân chuyển/shadow** các team AWS khác để hiểu bức tranh rộng hơn
 
-**Tôi có khuyên bạn bè thực tập ở đây không?**
+**Tôi có giới thiệu chương trình này cho bạn bè không?**
 
-**Chắc chắn có.** Đối với bất kỳ ai quan tâm đến cloud computing, chương trình FCJ tại AWS là không thể sánh bằng. Bạn được:
-- Kinh nghiệm thực hành với các dịch vụ cloud hàng đầu
-- Mentorship từ các chuyên gia giàu kinh nghiệm
-- Sở hữu và chịu trách nhiệm dự án thực
-- Kỹ năng được đánh giá cao trên thị trường lao động
+Chắc chắn. Nếu thích cloud engineering, FCJ mang lại:
+- Quyền truy cập trực tiếp vào dịch vụ AWS và quy trình production
+- Mentor tận tâm đồng hành
+- Quyền sở hữu đối với các deliverable quan trọng
+- Thành quả rõ ràng để trình bày với nhà tuyển dụng
 
-Điều kiện tiên quyết duy nhất là sự sẵn sàng học hỏi và làm việc chăm chỉ.
-
----
-
-### Đề Xuất & Mong Muốn Tương Lai
-
-**Đề xuất để cải thiện trải nghiệm thực tập:**
-
-1. **Tạo hub tài nguyên cho thực tập sinh** - Tài liệu, tutorials và FAQs tập trung cho các thách thức thường gặp
-2. **Buổi demo hai tuần một lần** - Thực tập sinh trình bày công việc cho team rộng hơn để nhận feedback và visibility
-3. **Hỗ trợ AWS certification** - Vouchers hoặc study groups cho kỳ thi Cloud Practitioner/Solutions Architect
-4. **Mạng lưới alumni** - Kết nối thực tập sinh hiện tại với cựu FCJ để tư vấn nghề nghiệp
-
-**Tôi có muốn tiếp tục với chương trình này không?**
-
-Có! Tôi muốn:
-- Quay lại làm cloud engineer chính thức sau khi tốt nghiệp
-- Mentor cho các thực tập sinh FCJ tương lai, trả lại sự hướng dẫn tôi đã nhận được
-- Tiếp tục đóng góp cho workshops và documentation FCJ
-
-**Suy nghĩ cuối cùng:**
-
-Kỳ thực tập này đã thay đổi hiểu biết của tôi về cloud computing và tích hợp AI. Tôi đến với kiến thức lập trình cơ bản; tôi rời đi với khả năng thiết kế và triển khai kiến trúc serverless có khả năng mở rộng. Team FCJ không chỉ dạy tôi AWS - họ cho tôi thấy ý nghĩa của việc trở thành một kỹ sư chuyên nghiệp.
-
-Cảm ơn AWS và team FCJ vì cơ hội tuyệt vời này. 🙏
+Bạn chỉ cần tinh thần tò mò và sự nỗ lực nghiêm túc.
 
 ---
 
-*"Cách tốt nhất để học là xây dựng. Cách tốt nhất để phát triển là được thử thách. FCJ cung cấp cả hai."*
+### Đề Xuất & Kỳ Vọng Tương Lai
+
+**Một vài ý tưởng để FCJ tiếp tục nâng tầm:**
+
+1. **Playbook tập trung cho thực tập sinh** với hướng dẫn setup môi trường, tip xử lý sự cố và mẫu kiến trúc
+2. **Buổi show-and-tell cách tuần** để thực tập sinh demo tiến độ, nhận góp ý và luyện kỹ năng trình bày
+3. **Khuyến khích thi chứng chỉ** như voucher hoặc nhóm học Cloud Practitioner/Solutions Architect
+4. **Nhóm alumni FCJ** kết nối người đi trước với thế hệ hiện tại để chia sẻ kinh nghiệm
+
+**Tôi có muốn tiếp tục đồng hành?**
+
+Tất nhiên. Tôi đặt mục tiêu:
+- Quay lại sau khi tốt nghiệp với vai trò cloud engineer hoặc solutions architect
+- Làm mentor cho khóa FCJ kế tiếp để truyền lửa và kinh nghiệm
+- Cập nhật bộ workshop này giúp đàn em onboard nhanh hơn
+
+**Lời kết**
+
+FCJ đã tái định hình cách tôi nghĩ về việc xây dựng trên nền tảng đám mây. Tôi bước vào với kiến thức sách vở và sự tò mò; tôi rời đi với quy trình làm việc đã được kiểm chứng, kỹ năng giao tiếp tốt hơn và sự tự tin khi thiết kế hệ thống an toàn, mở rộng được. Cảm ơn tất cả mọi người tại AWS đã đầu tư cho hành trình của tôi. 🙏
+
+---
+
+*"Sự trưởng thành đến khi tò mò gặp gỡ tinh thần trách nhiệm. FCJ chính là điểm giao đó đối với tôi."*

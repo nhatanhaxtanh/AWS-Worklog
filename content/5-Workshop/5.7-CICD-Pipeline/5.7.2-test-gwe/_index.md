@@ -24,5 +24,5 @@ pre: " <b> 5.7.2 </b> "
 4. Add frontend/backend project using AWS CodeBuild in build stage.
 ![CI/CD overview placeholder](/images/5-Workshop/5.7-CICD/codepipeline-4.png)
 5. For the deploy stage, choose Amazon ECS as deploy provider. Specify its cluster and service to deploy. Also make sure to fill in the image definition file form like the image.
-![CI/CD overview placeholder](/images/codepipeline-5.png)
+![CI/CD overview placeholder](/images/5-Workshop/5.7-CICD/codepipeline-5.png)
 6. Submit and then the pipeline is now created.

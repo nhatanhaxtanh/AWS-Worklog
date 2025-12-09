@@ -1,125 +1,90 @@
 ---
 title: "Event 1"
-date: 
+date: 2025-09-06
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “Kick-off Chương Trình The First Cloud Journey (FCJ)”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- **Chính thức khởi động** chương trình The First Cloud Journey (FCJ) kéo dài 12 tuần.
+- **Kết nối, làm quen** giữa các thành viên, Mentors và Ban Tổ Chức (BTC).
+- **Giới thiệu tổng quan** về tổ chức, mục tiêu học tập và lộ trình triển khai dự án.
+- **Hướng dẫn quy trình** làm việc nhóm và tiến hành **thành lập các nhóm** thực hiện dự án.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Đại diện Ban Tổ Chức (BTC)** - Giới thiệu về tầm nhìn và sứ mệnh của chương trình.
+- **Các Mentors tiêu biểu** - Chia sẻ kinh nghiệm và lộ trình thành công trong lĩnh vực Cloud.
+- **Các thành viên cựu (Alumni)** - Chia sẻ các bài học kinh nghiệm thực tế.
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Khung chương trình và Lộ trình 12 tuần
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Trình bày chi tiết **roadmap 12 tuần**, từ kiến thức AWS cơ bản (VPC, EC2) đến triển khai dự án Serverless hoàn chỉnh.
+- Đặt ra **mục tiêu cụ thể** về kiến thức và sản phẩm đầu ra (Minimum Viable Product - MVP).
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Quy tắc làm việc và Văn hóa tổ chức
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- **Quy định về kỷ luật, tham gia:** Nhấn mạnh sự cam kết và trách nhiệm cá nhân trong suốt hành trình.
+- **Văn hóa chia sẻ và hỗ trợ:** Xây dựng tinh thần cộng đồng mạnh mẽ giữa các thành viên.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Quy trình thành lập nhóm và Dự án
 
-#### Domain-Driven Design (DDD)
+- Hướng dẫn cách thức **tạo nhóm hiệu quả** (phân bổ vai trò, công cụ giao tiếp).
+- Đưa ra định hướng ban đầu cho các dự án Cloud để các nhóm bắt đầu nghiên cứu.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### An toàn tài khoản AWS
 
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Hướng dẫn thiết lập **bảo mật hai lớp (2FA)** và các thao tác cơ bản để **quản lý chi phí (Budget)** ngay từ đầu.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư Duy và Cam Kết
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- **Tầm quan trọng của kỷ luật:** Nhận thức rõ tính nghiêm túc và mức độ cam kết cần thiết để hoàn thành chương trình.
+- **Vai trò của cộng đồng:** Giá trị của việc học hỏi và hỗ trợ từ các Mentors và thành viên khác.
 
-#### Kiến Trúc Kỹ Thuật
+#### Kiến Thức Tổ Chức
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- **Mục tiêu của chương trình:** Hiểu rõ những kiến thức và kỹ năng Cloud mà chương trình mong muốn trang bị cho học viên.
+- **Lộ trình học tập rõ ràng:** Nắm được các module chính cần chinh phục trong 12 tuần.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Kỹ Năng Thực Hành Đầu Tiên
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- **Quy trình lập nhóm:** Hoàn thành việc tạo nhóm dự án cùng các thành viên mới.
+- **Bảo mật cơ bản:** Nắm được các bước ban đầu để thiết lập tài khoản AWS an toàn và tối ưu chi phí.
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Ngay lập tức thành lập nhóm** và phân công nhiệm vụ đầu tiên.
+- **Bắt đầu tìm hiểu** về tổ chức và các khái niệm Cloud cơ bản.
+- **Thực hiện các thao tác cơ bản trên tài khoản AWS** như thiết lập 2FA và Budget (theo Worklog Tuần 1).
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia buổi **Kick-off** là một trải nghiệm tràn đầy năng lượng và định hướng rõ ràng. Đây là sự kiện đặt nền móng cho toàn bộ hành trình 12 tuần:
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### Kết nối và Năng lượng Cộng đồng
+- **Cảm giác được chào đón:** Gặp gỡ và làm quen với tất cả thành viên trong FCJ, tạo ra môi trường học tập và làm việc nhóm tích cực.
+- **Mức độ nghiêm túc:** Buổi Kick-off đã truyền tải rõ ràng sự cam kết của BTC, giúp tôi ý thức được sự nghiêm túc cần thiết trong quá trình thực tập.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+#### Lộ trình và Mục tiêu
+- **Rõ ràng về định hướng:** Lần đầu tiên thấy được toàn bộ **lộ trình 12 tuần** một cách trực quan, giúp tôi lên kế hoạch học tập chủ động hơn.
+- **Giá trị của dự án:** Hiểu được rằng mục tiêu cuối cùng không chỉ là học mà còn là tạo ra một sản phẩm Cloud thực tế.
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+#### Bài học thực tiễn ban đầu
+- **Tầm quan trọng của 2FA và Budget:** Được hướng dẫn trực tiếp về các thao tác bảo mật và quản lý chi phí AWS, những bài học rất quan trọng ngay từ ngày đầu sử dụng Cloud.
+- **Teamwork:** Nhanh chóng **thành lập nhóm** và bắt đầu thảo luận về cách thức phối hợp.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+#### Kết luận
+Buổi Kick-off không chỉ là sự kiện giới thiệu mà còn là một buổi huấn luyện, cung cấp đủ thông tin và động lực để tôi tự tin **bắt đầu hành trình 12 tuần** chinh phục Cloud.
 
 #### Một số hình ảnh khi tham gia sự kiện
 * Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+> Tổng thể, sự kiện đã hoàn thành xuất sắc mục tiêu: cung cấp thông tin, thiết lập kỷ luật, và khơi dậy sự hứng thú cho một hành trình học tập và phát triển chuyên sâu.
